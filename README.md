@@ -5,6 +5,9 @@ I can remember Dave Thomas saying that whenever he picks up a new programming
 language, the first thing he does is implement a markdown parser. I think
 that's really neat... I want to make lambda calculus my "markdown parser."
 
+This is meant to be a simple, consistently easy to implement, full-featured
+lambda calculus.
+
 ## MVP
 ### Architecture
 #### Pipeline
