@@ -2,13 +2,13 @@
 Not that lambda calculus really needs a spec...
 
 I can remember Dave Thomas saying that whenever he picks up a new programming
-language, the first thing he does it implement a markdown parser. I think
+language, the first thing he does is implement a markdown parser. I think
 that's really neat... I want to make lambda calculus my "markdown parser."
 
 ## MVP
 ### Architecture
 #### Pipeline
-Tokenizer -> Parser -> Desugarer (just identity for MVP) -> Evaluator
+Tokenizer -> Parser -> Evaluator
 
 #### Components
  - Mechanism for program to read some code via STDIN
@@ -27,3 +27,10 @@ the second identity function
 ### General
  - I believe full closures are needed.
  - Whitespace is ignored by the tokenizer
+
+### Examples
+ - `\x.x` evaluates to `\x.x`
+ - `x` fails to evaluate
+ - `(\x.x \y.y)` evaluates to `\y.y` although preserving the `y`s is not
+   necessary
+ - `((\x.\y.x \b.b) \c.c)` evaluates to `\b.b`
