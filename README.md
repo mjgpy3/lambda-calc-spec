@@ -11,7 +11,7 @@ lambda calculus.
 ## MVP
 ### Architecture
 #### Pipeline
-Tokenizer -> Parser -> Evaluator
+Tokenizer -> Parser -> Evaluator -> PrettyPrinter
 
 #### Components
  - Mechanism for program to read some code via STDIN
