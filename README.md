@@ -8,6 +8,13 @@ that's really neat... I want to make lambda calculus my "markdown parser."
 This is meant to be a simple, consistently easy to implement, full-featured
 lambda calculus.
 
+## Running specs
+
+To run specs against a given lambda calculus implementation:
+```
+./test.py path/to/repository/details.json
+```
+
 ## MVP
 ### Architecture
 #### Pipeline
