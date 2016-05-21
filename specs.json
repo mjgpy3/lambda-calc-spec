@@ -6,6 +6,31 @@
         "expect": "\\x.x",
         "toEvaluateTo": "\\x.x",
         "because": "trivial lambdas evaluate to themselves"
+      },
+      {
+        "expect": "\\    x     .    x     ",
+        "toEvaluateTo": "\\x.x",
+        "because": "whitespace is ignored"
+      },
+      {
+        "expect": "\\012421x%$#@!&*^.DLGKJLKSJGLKSDJx91",
+        "toEvaluateTo": "\\x.x",
+        "because": "characters not explicitly known by the tokenizer are ignored"
+      },
+      {
+        "expect": "\\x.\\y.\\z.(x y)",
+        "toEvaluateTo": "\\x.\\y.\\z.(x y)",
+        "because": "more complicated lambdas evaluate to themselves"
+      },
+      {
+        "expect": "(\\x.x \\y.y)",
+        "toEvaluateTo": "\\y.y",
+        "because": "identity (I) function returns the value its applied to"
+      },
+      {
+        "expect": "((\\x.\\y.x \\y.y) \\z.z)",
+        "toEvaluateTo": "\\y.y",
+        "because": "const (K) function returns the value its applied to first"
       }
     ]
   }
