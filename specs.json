@@ -1,0 +1,12 @@
+[
+  {
+    "version": 0,
+    "specs": [
+      {
+        "expect": "\\x.x",
+        "toEvaluateTo": "\\x.x",
+        "because": "trivial lambdas evaluate to themselves"
+      }
+    ]
+  }
+]
