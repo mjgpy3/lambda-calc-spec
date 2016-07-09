@@ -8,11 +8,19 @@ that's really neat... I want to make lambda calculus my "markdown parser."
 This is meant to be a simple, consistently easy to implement, full-featured
 lambda calculus.
 
+## Implementations
+ - [Elixir](https://github.com/mjgpy3/lambda-calc-elixir)
+ - [F#](https://github.com/mjgpy3/lambda-calc-fsharp)
+ - [Haskell](https://github.com/mjgpy3/lambda-calc-haskell)
+ - [JavaScript](https://github.com/mjgpy3/lambda-calc-js)
+ - [PureScript](https://github.com/mjgpy3/lambda-calc-purescript)
+ - [Racket](https://github.com/mjgpy3/lambda-calc-racket)
+
 ## Running specs
 
 To run specs against a given lambda calculus implementation:
 ```
-./test.py path/to/repository/details.json
+./test.py path/to/implementation/details.json
 ```
 
 ## MVP
