@@ -52,3 +52,5 @@ the second identity function
  - `(\x.x \y.y)` evaluates to `\y.y` although preserving the `y`s is not
    necessary
  - `((\x.\y.x \b.b) \c.c)` evaluates to `\b.b`
+
+For more examples, see [specs.json](specs.json)
